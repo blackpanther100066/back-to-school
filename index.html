@@ -76,16 +76,16 @@
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       padding: 20px;
-      max-width: 1100px;
-      margin: auto;
     }
 
     .gallery img {
-      width: 100%;
+      width: 250px;
+      max-width: 90%;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
@@ -129,7 +129,6 @@
     <p>شنط - أدوات مكتبية - مستلزمات فنية وأكثر!</p>
   </section>
 
-  <!-- ✅ الزر تم نقله هنا -->
   <div class="cta">
     <button onclick="window.location.href='https://t.me/tjarb_mashael'">احجزي العرض الآن</button>
   </div>
