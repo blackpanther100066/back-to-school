@@ -18,7 +18,7 @@
     }
 
     header {
-      background-color: #4a4a4a; /* رمادي متوسط */
+      background-color: #4a4a4a;
       color: #fff;
       text-align: center;
       padding: 30px 20px;
@@ -59,16 +59,13 @@
 
     .hero {
       text-align: center;
-      background-color: #FFFFFF ;
+      background-color: #ffffff;
       padding: 30px 15px;
       border-bottom: 2px dashed #ccc;
     }
 
     .hero p {
       color: #00ccff;
-	  h1    {
-      font-weight:700;
-    }
       font-size: 1.2em;
       margin: 10px 0;
     }
@@ -114,16 +111,16 @@
     }
 
     .gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       padding: 20px;
+      justify-items: center;
     }
 
     .gallery img {
-      width: 250px;
-      max-width: 90%;
+      width: 100%;
+      max-width: 250px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
@@ -167,9 +164,9 @@
     <div class="flash-text">🎁 عروض متجددة يوميًا - لا تفوتيها!</div>
   </header>
 
-<div class="headline">
-  <span style="color: #4fc3f7;">هل أنت مستعد</span> للعودة؟ 🎒✏️
-</div>
+  <div class="headline">
+    <span style="color: #4fc3f7;">هل أنت مستعد</span> للعودة؟ 🎒✏️
+  </div>
 
   <section class="hero">
     <p>استعدي للعام الدراسي بأجمل المستلزمات المدرسية لطفلك 🧒📚</p>
@@ -186,7 +183,9 @@
 
   <section class="gallery">
     <img src="01.jpg" alt="منتج 1">
+    <img src="02.jpg" alt="منتج 2">
     <img src="03.jpg" alt="منتج 3">
+    <img src="04.jpg" alt="منتج 4">
     <img src="05.jpg" alt="منتج 5">
     <img src="06.jpg" alt="منتج 6">
     <img src="07.jpg" alt="منتج 7">
