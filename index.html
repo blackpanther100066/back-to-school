@@ -10,15 +10,16 @@
       margin: 0;
       padding: 0;
       font-family: 'Cairo', sans-serif;
-      background: linear-gradient(135deg, #f0f4ff, #fff0f5);
+      background-color: #3c3c3c; /* خلفية سبورة */
+      color: #fff;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
     header {
-      background-color: #ff6f61;
-      color: white;
+      background-color: #4a4a4a; /* رمادي متوسط */
+      color: #fff;
       text-align: center;
       padding: 30px 20px;
       animation: fadeInDown 1s ease-in-out;
@@ -26,12 +27,18 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.3em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      font-weight: 500;
     }
 
     .flash-text {
       background-color: #fff;
-      color: #ff6f61;
+      color: #4a4a4a;
       padding: 10px 20px;
       font-weight: bold;
       border-radius: 25px;
@@ -41,14 +48,27 @@
       font-size: 1em;
     }
 
+    .headline {
+      font-size: 3em;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin: 40px 20px 10px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
     .hero {
       text-align: center;
-      background-color: #fff;
+      background-color: #FFFFFF ;
       padding: 30px 15px;
+      border-bottom: 2px dashed #ccc;
     }
 
     .hero p {
-      color: #333;
+      color: #00ccff;
+	  h1    {
+      font-weight:700;
+    }
       font-size: 1.2em;
       margin: 10px 0;
     }
@@ -59,7 +79,7 @@
     }
 
     .cta button {
-      background-color: #28a745;
+      background-color: #00c853;
       color: white;
       padding: 15px 35px;
       border: none;
@@ -71,12 +91,12 @@
     }
 
     .cta button:hover {
-      background-color: #1e7e34;
+      background-color: #009624;
       transform: scale(1.05);
     }
 
     .installment-banner {
-      background-color: #e67e22;
+      background-color: #555;
       color: white;
       display: inline-block;
       padding: 10px 20px;
@@ -85,7 +105,7 @@
       font-weight: bold;
       font-size: 1em;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       animation: fadeInUp 1s ease-in-out;
     }
 
@@ -105,7 +125,7 @@
       width: 250px;
       max-width: 90%;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
     }
 
@@ -142,9 +162,14 @@
 <body>
 
   <header>
-    <h1>🎒 عروض العودة للمدارس</h1>
+    <h1>🎒 العودة للمدارس | Back to School</h1>
+    <p>ابدأي السنة الجديدة بأجمل المستلزمات لأطفالك — <span style="color: #ffd54f;">Ready, Set, Learn!</span> ✏️📘</p>
     <div class="flash-text">🎁 عروض متجددة يوميًا - لا تفوتيها!</div>
   </header>
+
+<div class="headline">
+  <span style="color: #4fc3f7;">هل أنت مستعد</span> للعودة؟ 🎒✏️
+</div>
 
   <section class="hero">
     <p>استعدي للعام الدراسي بأجمل المستلزمات المدرسية لطفلك 🧒📚</p>
@@ -155,7 +180,6 @@
     <button onclick="window.location.href='https://ty.gl/y19s6i4s6mi2c'">احجزي العرض الآن</button>
   </div>
 
-  <!-- ✅ بانر تابي وتمارا -->
   <div class="installment-banner">
     <span>💳</span> يوجد تابي وتمارا للتقسيط بدون فوائد
   </div>
